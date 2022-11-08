@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+    /* Color */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Red Hat Display';
+    transition: all .2s ease-out;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Pale-blue);
+}
+
+main  {
+    padding: 1.25rem;
+}
+
+.card {
+    max-width: 430px;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.card-img img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 28px;
+    margin: 2rem 0 1rem 0;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.card-desc {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--Desaturated-blue);
+}
+
+.plan {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: .75rem;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box1 p {
+    color: var(--Dark-blue-blue);
+    line-height: 1.7;
+    font-weight: 900;
+}
+
+.box1 span {
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.box2 p {
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--Bright-blue);
+}
+
+.box2 p:hover {
+    color: hsl(245, 75%, 52%, 50%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn,.btn-secondary:hover {
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: .75rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    background-color: var(--Bright-blue);
+}
+
+.btn:hover {
+    background-color: hsl(245, 75%, 52%, 50%);
+    box-shadow: hsla(245, 75%, 52%, 0.4) 0 10px 15px;
+
+}
+
+.btn-secondary {
+    margin-bottom: 2.5rem;
+    border: none;
+    background: none;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+}
+
+@media screen and (max-width:450px) {
+    .card-container {
+        padding: 0 1.25rem;
+    }
+    .plan {
+        padding: 1.25rem;
+    }
+}
